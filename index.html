@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Wiliam Morales | Líder Técnico & Desarrollador Full Stack</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <!-- Menú flotante VERTICAL en la derecha (aparece al pasar Sobre Mí) -->
+    <div class="floating-menu" id="floatingMenu">
+      <a href="#home" class="menu-icon active" title="Inicio"
+        ><i class="fas fa-home"></i
+      ></a>
+      <a href="#about" class="menu-icon" title="Sobre Mí"
+        ><i class="fas fa-user"></i
+      ></a>
+      <a href="#experience" class="menu-icon" title="Experiencia"
+        ><i class="fas fa-briefcase"></i
+      ></a>
+      <a href="#projects" class="menu-icon" title="Proyectos"
+        ><i class="fas fa-code"></i
+      ></a>
+      <a href="#tools" class="menu-icon" title="Herramientas"
+        ><i class="fas fa-tools"></i
+      ></a>
+      <a href="#contact" class="menu-icon" title="Contacto"
+        ><i class="fas fa-envelope"></i
+      ></a>
+    </div>
+
+    <!-- Botón flotante de WhatsApp - esquina inferior DERECHA -->
+    <a
+      href="https://wa.me/5930993531735?text=Hola%20Wiliam,%20me%20interesa%20conocer%20más%20sobre%20tu%20perfil%20profesional"
+      class="whatsapp-float"
+      target="_blank"
+      title="Contáctame por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <main>
+      <!-- Hero con grid de 2 columnas - FONDO EXCLUSIVO CON IMAGEN fondo1.png -->
+      <section
+        id="home"
+        class="hero"
+        style="
+          background:
+            linear-gradient(
+              135deg,
+              rgba(10, 10, 10, 0.85),
+              rgba(26, 26, 26, 0.9)
+            ),
+            url(&quot;assets/img/fondo1.png&quot;);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        "
+      >
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div
+              style="
+                font-weight: 600;
+                color: #e30613;
+                margin-bottom: 0.5rem;
+                letter-spacing: 2px;
+              "
+            >
+              WM
+            </div>
+            <h1 class="hero-title">Wiliam Manuel Morales Aimacaña</h1>
+            <p class="hero-subtitle">
+              Líder Técnico & Desarrollador Full Stack
+            </p>
+            <p class="hero-description">
+              Egresado en Desarrollo de Software con sólida experiencia en
+              liderazgo técnico, gestión de equipos ágiles y desarrollo full
+              stack. Me motiva transformar desafíos en soluciones funcionales.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary" id="scrollToContact">
+                <i class="fas fa-paper-plane"></i> Contáctame
+              </button>
+              <button class="btn-outline" id="scrollToProjects">
+                <i class="fas fa-eye"></i> Ver Proyectos
+              </button>
+              <a
+                href="https://github.com/morales-593"
+                target="_blank"
+                class="btn-github"
+                ><i class="fab fa-github"></i> Visitar GitHub</a
+              >
+            </div>
+            <div class="hero-quote">
+              <p>
+                <i class="fas fa-quote-left"></i> "La disciplina y la
+                comunicación efectiva son el puente entre las ideas y las
+                soluciones que transforman realidades."
+              </p>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-img-container">
+              <img
+                class="profile-img"
+                src="assets/img/wiliam.png"
+                alt="Wiliam Morales"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Mí (sin fondo de imagen) -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">Sobre Mí</h2>
+          <div class="grid-3">
+            <div class="card-white">
+              <i
+                class="fas fa-bullseye"
+                style="font-size: 2rem; color: #e30613"
+              ></i>
+              <h3 style="margin: 1rem 0">Objetivo profesional</h3>
+              <p>
+                Egresado en Desarrollo de Software con sólida base en
+                coordinación de proyectos técnicos desde fases iniciales. Actúo
+                como puente entre necesidades del negocio y ejecución del
+                equipo, asegurando cumplimiento de objetivos en tiempo y forma.
+              </p>
+            </div>
+            <div class="card-white">
+              <i
+                class="fas fa-graduation-cap"
+                style="font-size: 2rem; color: #e30613"
+              ></i>
+              <h3 style="margin: 1rem 0">Formación</h3>
+              <p>
+                <strong>Tecnólogo en Desarrollo de Software</strong
+                ><br />Instituto Superior Tecnológico Yavirac<br />mar 2023 –
+                jun 2026 | Egresado (título en trámite)
+              </p>
+            </div>
+            <div class="card-white">
+              <i
+                class="fas fa-language"
+                style="font-size: 2rem; color: #e30613"
+              ></i>
+              <h3 style="margin: 1rem 0">Idiomas</h3>
+              <p>🇪🇸 Español: Nativo<br />🇬🇧 Inglés: Intermedio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiencia laboral -->
+      <section id="experience" class="bg-light-section">
+        <div class="container">
+          <h2 class="section-title" style="color: #1a1a1a">
+            Experiencia Laboral
+          </h2>
+          <div class="grid-3">
+            <div class="card-white">
+              <i
+                class="fas fa-users"
+                style="color: #e30613; font-size: 1.8rem"
+              ></i>
+              <h3>linkearnet SA</h3>
+              <p style="color: #e30613; font-weight: 500">
+                mar 2024 – ene 2026
+              </p>
+              <ul style="margin-left: 1.2rem">
+                <li>
+                  Coordinación de equipo de 4 personas para desarrollo de
+                  software, facilitando comunicación y organización de tareas.
+                </li>
+                <li>
+                  Gestión del tiempo, resolución de problemas y adaptabilidad.
+                </li>
+              </ul>
+            </div>
+            <div class="card-white">
+              <i
+                class="fas fa-qrcode"
+                style="color: #e30613; font-size: 1.8rem"
+              ></i>
+              <h3>Instituto Geográfico Militar</h3>
+              <p style="color: #e30613; font-weight: 500">
+                jul 2023 – sept 2023
+              </p>
+              <ul>
+                <li>
+                  Diseño e implementación de solución con códigos QR para
+                  optimizar registro y seguimiento de cursos.
+                </li>
+                <li>
+                  Trabajo directo con personal operativo para asegurar adopción
+                  del sistema.
+                </li>
+              </ul>
+            </div>
+            <div class="card-white">
+              <i
+                class="fas fa-chalkboard-user"
+                style="color: #e30613; font-size: 1.8rem"
+              ></i>
+              <h3>Scrum Master / Líder Técnico</h3>
+              <p style="color: #e30613; font-weight: 500">
+                Pasantía - linkearnet SA
+              </p>
+              <ul>
+                <li>
+                  Facilitación de ceremonias ágiles como Scrum Master de equipo
+                  de estudiantes.
+                </li>
+                <li>
+                  Integración de pasarela de pagos PayPal y remoción de
+                  impedimentos técnicos.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <div class="grid-3" id="projectsGrid"></div>
+        </div>
+      </section>
+
+      <!-- Carrusel infinito herramientas CON ICONOS -->
+      <section id="tools" class="bg-light-section">
+        <div class="container">
+          <h2 class="section-title" style="color: #1a1a1a">
+            Habilidades Técnicas
+          </h2>
+          <div
+            class="carousel-container"
+            style="overflow: hidden; padding: 1rem 0"
+          >
+            <div class="carousel-track" id="toolsTrack"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades blandas -->
+      <section>
+        <div class="container">
+          <h2 class="section-title">Habilidades Blandas</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem">
+            <div class="soft-badge">
+              <i class="fas fa-chalkboard-user text-red"></i> Liderazgo técnico
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-comments text-red"></i> Comunicación efectiva
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-users text-red"></i> Trabajo en equipo
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-sync-alt text-red"></i> Adaptabilidad
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-brain text-red"></i> Resolución de problemas
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-clock text-red"></i> Gestión del tiempo
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-tasks text-red"></i> Organización personal
+            </div>
+            <div class="soft-badge">
+              <i class="fas fa-chart-line text-red"></i> Disciplina
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer - SIN BOTÓN DE DESCARGAR CV -->
+      <footer id="contact">
+        <div class="footer-grid">
+          <div>
+            <h3 style="color: #e30613">Wiliam Morales</h3>
+            <p style="color: #cccccc">
+              Líder Técnico & Desarrollador Full Stack
+            </p>
+            <p style="color: #cccccc; margin-top: 0.5rem">Quito, Ecuador</p>
+          </div>
+          <div>
+            <h4 style="color: white">Enlaces rápidos</h4>
+            <ul style="list-style: none; line-height: 2">
+              <li>
+                <a href="#home" style="color: #cccccc; text-decoration: none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  style="color: #cccccc; text-decoration: none"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  style="color: #cccccc; text-decoration: none"
+                  >Experiencia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: white">Contacto</h4>
+            <p>
+              <i class="fas fa-envelope" style="color: #e30613"></i>
+              wiliampuntomorales45@gmail.com
+            </p>
+            <p><i class="fas fa-phone-alt"></i> 0993531735</p>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/wiliam-morales-75348b222"
+                target="_blank"
+                class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/morales-593"
+                target="_blank"
+                class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 1px solid #2d2d2d;
+            padding-top: 1.5rem;
+            font-size: 0.8rem;
+          "
+        >
+          © 2026 Wiliam Manuel Morales Aimacaña — Portafolio profesional
+        </div>
+      </footer>
+    </main>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <i class="fas fa-image" style="font-size: 2.5rem; color: #e30613"></i>
+        <h3 id="modalTitle" style="color: #1a1a1a">Título</h3>
+        <img id="modalImg" src="" alt="preview" />
+        <p id="modalDesc" style="color: #4a4a4a"></p>
+        <button class="close-modal" id="closeModalBtn">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
