@@ -323,13 +323,31 @@
 
   <!-- Modal -->
   <div id="projectModal" class="modal">
-    <div class="modal-content">
-      <i class="fas fa-image" style="font-size: 2.5rem; color: #e30613"></i>
-      <h3 id="modalTitle" style="color: #1a1a1a">Título</h3>
-      <img id="modalImg" src="" alt="preview" />
-      <p id="modalDesc" style="color: #4a4a4a"></p>
-      <button class="close-modal" id="closeModalBtn">Cerrar</button>
+    <div class="modal-content modal-split">
+      <button class="close-modal-icon" id="closeModalIcon" title="Cerrar"><i class="fas fa-times"></i></button>
+      <div class="modal-left">
+        <div class="img-zoom-container" id="imgZoomBtn" title="Ver imagen completa">
+          <img id="modalImg" src="" alt="preview" class="zoomable-img" />
+          <div class="zoom-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+      <div class="modal-right">
+        <div class="numbers-bg" id="numbersBg"></div>
+        <div class="modal-right-content">
+          <h3 id="modalTitle" class="minimal-title">Título</h3>
+          <p id="modalDesc" class="minimal-desc"></p>
+          <div style="margin-top: auto;">
+            <button class="close-modal" id="closeModalBtn">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Fullscreen Image Viewer Modal -->
+  <div id="imageViewerModal" class="modal" style="z-index: 1200;">
+    <button class="close-modal-icon" id="closeImageViewerBtn" style="color: white; background: rgba(255,255,255,0.2);" title="Cerrar vista"><i class="fas fa-times"></i></button>
+    <img id="fullScreenImg" src="" alt="Full Screen" style="max-width: 95%; max-height: 95%; border-radius: 8px; object-fit: contain; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
   </div>
 
   </div>

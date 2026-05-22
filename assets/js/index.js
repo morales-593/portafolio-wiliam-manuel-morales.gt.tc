@@ -209,7 +209,34 @@ document.getElementById('scrollToContact').addEventListener('click', () => docum
 document.getElementById('scrollToProjects').addEventListener('click', () => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }));
 document.getElementById('scrollDownBtn').addEventListener('click', () => document.getElementById('about').scrollIntoView({ behavior: 'smooth' }));
 document.getElementById('closeModalBtn').addEventListener('click', () => document.getElementById('projectModal').style.display = 'none');
-window.onclick = (e) => { if (e.target === document.getElementById('projectModal')) document.getElementById('projectModal').style.display = 'none'; };
+document.getElementById('closeModalIcon').addEventListener('click', () => document.getElementById('projectModal').style.display = 'none');
+
+// Full screen image logic
+const imageViewerModal = document.getElementById('imageViewerModal');
+const fullScreenImg = document.getElementById('fullScreenImg');
+document.getElementById('imgZoomBtn').addEventListener('click', () => {
+    fullScreenImg.src = document.getElementById('modalImg').src;
+    imageViewerModal.style.display = 'flex';
+});
+document.getElementById('closeImageViewerBtn').addEventListener('click', () => {
+    imageViewerModal.style.display = 'none';
+});
+
+window.onclick = (e) => { 
+    if (e.target === document.getElementById('projectModal')) document.getElementById('projectModal').style.display = 'none'; 
+    if (e.target === imageViewerModal) imageViewerModal.style.display = 'none';
+};
+
+// Generar fondo de números animados
+const numbersBg = document.getElementById('numbersBg');
+if (numbersBg) {
+    let numStr = '';
+    for (let i = 0; i < 1500; i++) {
+        numStr += Math.round(Math.random()) + (Math.random() > 0.8 ? '  ' : '');
+    }
+    // Duplicar para lograr el efecto infinito
+    numbersBg.innerText = numStr + '\n' + numStr;
+}
 
 renderProjects();
 
