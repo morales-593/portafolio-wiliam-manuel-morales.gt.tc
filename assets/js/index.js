@@ -77,7 +77,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 const projectsData = [
 
-    { title: "Actualización de Plataforma de Hotel Villa de Sant", desc: "Actué como Scrum Master integrando pasarela de pagos PayPal, removiendo impedimentos técnicos y facilitando ceremonias ágiles para garantizar avance del proyecto.", tech: "Wix", img: "assets/img/project4.jpg" },
+    { title: "Landing Page + Panel Admin + Pasarela de Pagos", desc: "Proyecto internacional para cliente en Australia. Desarrollo completo de landing page, panel administrador e integración de pasarela de pagos (Visa/MasterCard). Gestión completa del proyecto con comunicación en inglés, pruebas funcionales y no funcionales. Entrega exitosa en plazo récord.", tech: "PHP, Jira, Selenium, Postman", img: "assets/img/aus-002.png" },
     { title: "Sistema Web de Gestión de POA", desc: "Lideré la transición de procesos manuales (Word/Excel) a plataforma digital, coordinando el ciclo completo: revelamiento, desarrollo y entrega. Optimicé tiempos de procesamiento institucional mediante automatización de flujos de aprobación.", tech: "PHP, MySQL, Postman", img: "assets/img/poa.jpeg" },
     { title: "Aplicación Interactiva - Contabilidad", desc: "Desarrollé aplicación interactiva tipo juego para estudiantes de contabilidad, permitiendo evaluar conocimientos mediante formato lúdico. Implementé sistema de base de datos para registro de usuarios y seguimiento de progreso.", tech: "JavaScript, Node.js, MongoDB", img: "assets/img/fondo1.png" },
     { title: "Solución QR - Instituto Geográfico Militar", desc: "Diseñé e implementé solución con códigos QR para optimizar registro y seguimiento de cursos, reduciendo tiempos de búsqueda y mejorando trazabilidad.", tech: "JavaScript, QRCode API, HTML/CSS", img: "assets/img/qr.jpeg" },
@@ -107,7 +107,7 @@ function renderProjects() {
             const project = projectsData[idx];
             document.getElementById('modalTitle').innerText = project.title;
             document.getElementById('modalImg').src = project.img;
-            document.getElementById('modalDesc').innerHTML = `${project.desc}<br><br><strong>Tecnologías:</strong> ${project.tech}<br><i class="fab fa-github"></i> GitHub: github.com/morales-593`;
+            document.getElementById('modalDesc').innerHTML = `${project.desc}<br><br><strong>Tecnologías:</strong> ${project.tech}`;
             document.getElementById('projectModal').style.display = 'flex';
         });
     });
